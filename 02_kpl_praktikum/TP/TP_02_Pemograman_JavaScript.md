@@ -1,6 +1,28 @@
-Soal
+# TUUGAS PENDAHULUAN: PEMOGRAMAN JAVA SCRIPT
+
+Naufal Kafabih Khalwani
+
+103122400036
+
+SE-08-02
+
+Dosen Pengampu: Yudah Islami Sulistiya
+
+Asisten Praktikum: Adhiansyah Muhammad Pradana Frawown. Hammid Khaeruman
+
+## SOAL
 
 Kamu sudah menulis fungsi mulOfArray. Ujilah dengan input [2, 0, 26, 28, -2], dengan output yang seharusnya adalah 1456. Jika kamu menemukan bahwa hasilnya berbeda, bisakah kamu memperbaikinya? Jika kamu menemukan bahwa hasilnya sama, bisakah kamu menjelaskan mengapa demikian?
+
+## KODE SUMBER
+
+Tersedia di [main.html](./main.html) dan [main.js](./tp.js)
+
+## OUTPUT
+
+![Gambar yang menunjukan code sumber dan pratampil Markdown](hasil_running.png)
+
+## DESKRIPSI
 
 const arr1 = [2, 0, 26, 28, -2];
 
