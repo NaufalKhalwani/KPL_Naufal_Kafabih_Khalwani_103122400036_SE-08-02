@@ -1,0 +1,9 @@
+{
+  "name": "hitung-teks",
+  "version": "1.0.0",
+  "description": "Library untuk menghitung huruf dan kata",
+  "main": "index.js",
+  "type": "module",
+  "author": "Naufal Kafabih Khalwani",
+  "license": "ISC"
+}
