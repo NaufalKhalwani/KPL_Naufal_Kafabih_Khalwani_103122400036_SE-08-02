@@ -12,11 +12,41 @@ Asisten Praktikum: Adhiansyah Muhammad Pradana Frawown. Hammid Khaeruman
 
 ## SOAL
 
-Buatlah sebuah pustaka JavaScript bernama mtk-gampang yang memiliki struktur terpisah dan berisi tiga fungsi, yaitu pangkat(x, y), bulat(x), dan kuadrat(x). Fungsi harus berada di dalam folder lib dan hanya dapat diakses melalui index.js sebagai entry point.
+Cobalah untuk menangkap kecacatan dalam kode berikut.
+
+```javascript
+function main() {
+  const data = [
+    "123",
+    456,
+    "hello",
+    78.9,
+    true,
+  ];
+
+  for (let i = 0; i < data.length; i++) {
+    const result = processData(data[i]);
+    console.log(`Item ${i + 1}: ${data[i]} -> ${result}`);
+  }
+}
+
+function processData(data) {
+  const str = data.toLowerCase();
+  const num = parseInt(str);
+
+  if (!isNaN(num) && str === String(num)) {
+    return `Number: ${num * 2}`;
+  }
+
+  return `Teks: ${str} (panjangnya: ${str.length})`;
+}
+
+main();
+```
 
 ## KODE SUMBER
 
-Tersedia di [index.js](./index.js) dan folder [lib](./lib)
+Tersedia di [index.js](./index.js)
 
 ## OUTPUT
 
@@ -24,12 +54,10 @@ Tersedia di [index.js](./index.js) dan folder [lib](./lib)
 
 ## DESKRIPSI
 
-Pada tugas ini dibuat sebuah pustaka JavaScript bernama mtk-gampang yang berisi beberapa fungsi matematika sederhana. Struktur proyek dipisahkan menjadi beberapa file untuk menjaga kerapihan dan modularitas kode.
+Pada tugas ini dilakukan analisis terhadap sebuah program JavaScript yang memiliki beberapa kecacatan dalam pengolahan data. Program mencoba memproses data dengan tipe yang berbeda seperti string, number, dan boolean.
 
-Terdapat tiga fungsi utama, yaitu pangkat, bulat, dan kuadrat. Masing-masing fungsi ditempatkan dalam file terpisah di dalam folder lib. Fungsi pangkat digunakan untuk menghitung perpangkatan suatu bilangan, fungsi bulat digunakan untuk mengubah bilangan desimal menjadi bilangan bulat dengan menghilangkan bagian desimal, dan fungsi kuadrat digunakan untuk menghitung akar kuadrat dari suatu bilangan.
+Kecacatan utama terdapat pada fungsi processData, khususnya pada penggunaan method toLowerCase() yang hanya dapat digunakan pada tipe data string. Ketika program menerima data bertipe number atau boolean, program akan menghasilkan error karena method tersebut tidak tersedia pada tipe data selain string.
 
-Agar pustaka dapat digunakan dengan baik, semua fungsi diekspor melalui file index.js sebagai entry point utama. Dengan cara ini, pengguna pustaka hanya perlu mengimpor dari satu file tanpa harus mengakses file dalam folder lib secara langsung.
+Selain itu, penggunaan parseInt() juga kurang tepat karena hanya membaca angka bulat dan mengabaikan nilai desimal. Sebagai contoh, nilai 78.9 akan diproses menjadi 78 sehingga menyebabkan perubahan data yang tidak sesuai.
 
-Pustaka ini menggunakan sistem modul ES Module (ESM) dengan keyword export dan import, sehingga dapat digunakan kembali pada proyek lain. Selain itu, pustaka ini juga dapat diinstal secara lokal menggunakan npm dengan menyebutkan direktori proyek.
-
-Dengan pendekatan ini, kode menjadi lebih terstruktur, mudah dipelihara, dan sesuai dengan konsep pembuatan pustaka dalam pengembangan perangkat lunak.
+Untuk memperbaiki masalah tersebut dilakukan pengecekan tipe data menggunakan typeof sebelum data diproses. Program juga menggunakan Number() agar dapat membaca angka desimal dengan benar. Dengan perbaikan tersebut, program menjadi lebih aman, fleksibel, dan dapat menangani berbagai tipe data tanpa menyebabkan error.
