@@ -1,10 +1,12 @@
-# Tugas Pendahuluan - Analisis Kecacatan Kode JavaScript
+# Tugas Pendahuluan - PROFILING
+
+Naufal Kafabih Khalwani
+103122400036
+SE-08-02
 
 ## Deskripsi Tugas
 
 Pada tugas ini dilakukan analisis terhadap sebuah program JavaScript yang memiliki beberapa kecacatan (bug) dalam pengolahan data. Program awal mencoba memproses data campuran seperti string, number, dan boolean, namun terdapat kesalahan logika yang menyebabkan program error ketika dijalankan.
-
----
 
 # Kode Awal
 
