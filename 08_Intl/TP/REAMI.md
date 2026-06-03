@@ -1,4 +1,4 @@
-# TUGAS PENDAHULUAN: Runtime Configuration dan Internationalization
+# TUGAS PENDAHULUAN: INTL
 
 Naufal Kafabih Khalwani  
 103122400036  
