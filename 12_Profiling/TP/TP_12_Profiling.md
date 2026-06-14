@@ -1,3 +1,4 @@
+<<<<<<< HEAD:12_Profiling/TP/readmi.md
 # Tugas Pendahuluan - PROFILING
 
 Naufal Kafabih Khalwani

@@ -1,4 +1,4 @@
-# TUUGAS MANDIRI: LIBRARY CONTRUCTION
+# TUUGAS MANDIRI: Library Contruction
 
 Naufal Kafabih Khalwani
 

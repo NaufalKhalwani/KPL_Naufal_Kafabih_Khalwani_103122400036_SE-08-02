@@ -1,4 +1,4 @@
-# TUGAS MANDIRI: Penguraian (Parsing) Teks dan JSON
+# TUGAS MANDIRI: Grammar based Input Processing
 
 Naufal Kafabih Khalwani  
 103122400036  

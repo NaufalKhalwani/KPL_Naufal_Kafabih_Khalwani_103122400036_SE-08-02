@@ -1,8 +1,4 @@
-Berikut dokumentasi yang sudah aku rapikan sesuai format yang kamu mau 👇
-
----
-
-# TUUGAS PENDAHULUAN: FUNGSI GENERIC PENGHITUNG KARAKTER
+# TUUGAS PENDAHULUAN: GENERIC
 
 Naufal Kafabih Khalwani
 103122400036
